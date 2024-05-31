@@ -7,25 +7,25 @@
 Important! The original annotations should be in coco format.
 
 To run the benchmark, run the following:
-'''
+```
 python noise_annotations.py /path/to/annotations --benchmark {easy, medium, hard} (choose the benchmark level) --seed 1
-'''
+```
 
 For example:
-'''
+```
 python noise_annotations.py /path/to/annotations --benchmark easy --seed 1
-'''
+```
 
 
 To run a custom noise method, run the following:
-'''
+```
 python noise_annotations.py /path/to/annotations --method_name method_name --corruption_values [{'rand': [scale_proportion, kernel_size(should be odd number)],'localization': [scale_proportion, std_dev], 'approximation': [scale_proportion, tolerance], 'flip_class': percent_class_noise}]}]
-'''
+```
 
 for example:
-'''
+```
  python noise_annotations.py /path/to/annotations --method_name my_noise_method --corruption_values [{'rand': [0.2, 3], 'localization': [0.2, 2], 'approximation': [0.2, 5], 'flip_class': 0.2}]
- '''
+```
 
 
 ## Citation
