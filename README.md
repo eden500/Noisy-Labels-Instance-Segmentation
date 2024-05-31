@@ -23,7 +23,5 @@ Please make sure you use it with proper licenced Datasets.
 
 We use [MS-COCO/LVIS](https://cocodataset.org/#termsofuse) and [Cityscapes](https://www.cityscapes-dataset.com/license/)
 
-## END - Please copy that and LICENSE file.
-
 
 ![image](https://github.com/eden500/Noisy-Labels-Instance-Segmentation/assets/66938362/3e22ad79-3f12-4767-b994-2df57dd265e7)
