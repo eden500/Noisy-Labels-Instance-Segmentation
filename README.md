@@ -35,7 +35,15 @@ If you use this benchmark in your research, please cite this project.
 
 
 ```
-Bibtex will be avalible shortly
+@misc{grad2024benchmarkinglabelnoiseinstance,
+      title={Benchmarking Label Noise in Instance Segmentation: Spatial Noise Matters}, 
+      author={Eden Grad and Moshe Kimhi and Lion Halika and Chaim Baskin},
+      year={2024},
+      eprint={2406.10891},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2406.10891}, 
+}
 ```
 
 
