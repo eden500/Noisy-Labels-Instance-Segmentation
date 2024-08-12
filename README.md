@@ -27,6 +27,28 @@ For example:
  python noise_annotations.py /path/to/annotations --method_name my_noise_method --corruption_values [{'rand': [0.2, 3], 'localization': [0.2, 2], 'approximation': [0.2, 5], 'flip_class': 0.2}]
 ```
 
+To run the wan-coco, do the following:
+
+download the weights for sam vit-h:
+```
+mkdir -p weights
+cd weights
+wget -q https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+```
+
+for the easy noise, run create_gt_plus_sam_noise.py:
+```
+python create_gt_plus_sam_noise.py --annotations_path=a_path --data_path=d_path --sam_path=s_path
+```
+
+For example:
+```
+python create_gt_plus_sam_noise.py --annotations_path=data/coco_ann2017/annotations --data_path=data --sam_path=weights/sam_vit_h_4b8939.pth
+```
+
+For the medium noise do the exact same thing but with the file create_gt_plus_sam_point_noise.py
+
+
 
 ## Citation
 
