@@ -27,7 +27,7 @@ For example:
  python noise_annotations.py /path/to/annotations --method_name my_noise_method --corruption_values [{'rand': [0.2, 3], 'localization': [0.2, 2], 'approximation': [0.2, 5], 'flip_class': 0.2}]
 ```
 
-To run the wan-coco, do the following:
+To run the coco-wan, do the following:
 
 download the weights for sam vit-h:
 ```
@@ -46,7 +46,10 @@ For example:
 python create_gt_plus_sam_noise.py --annotations_path=data/coco_ann2017/annotations --data_path=data --sam_path=weights/sam_vit_h_4b8939.pth
 ```
 
-For the medium noise do the exact same thing but with the file create_gt_plus_sam_point_noise.py
+For the medium noise, do the exact same thing but with the file create_gt_plus_sam_point_noise.py
+
+
+For the hard noise, apply class noise on top of the medium weak annotation noise by running noise_annotations.py with the proper arguments.
 
 
 
