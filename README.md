@@ -35,8 +35,14 @@ mkdir -p weights
 cd weights
 wget -q https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
 ```
+Create a conda env with the required libraries:
+```
+ conda env create -f wan_environment.yml
 
-for the easy noise, run create_gt_plus_sam_noise.py:
+ conda activate cuda_env
+```
+
+For the easy noise, run create_gt_plus_sam_noise.py:
 ```
 python create_gt_plus_sam_noise.py --annotations_path=a_path --data_path=d_path --sam_path=s_path
 ```
